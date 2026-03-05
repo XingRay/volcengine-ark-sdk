@@ -1,6 +1,6 @@
 package com.github.xingray.volcenginesdk.model.bot
 
-import io.github.xingray.volcenginesdk.model.chat.ChatMessage
+import com.github.xingray.volcenginesdk.model.chat.ChatMessage
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.JsonElement

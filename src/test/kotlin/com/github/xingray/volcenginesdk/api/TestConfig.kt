@@ -1,6 +1,6 @@
 package com.github.xingray.volcenginesdk.api
 
-import io.github.xingray.volcenginesdk.ArkClient
+import com.github.xingray.volcenginesdk.ArkClient
 import org.junit.jupiter.api.Assumptions
 
 /**

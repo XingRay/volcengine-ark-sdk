@@ -1,6 +1,6 @@
 package com.github.xingray.volcenginesdk.api
 
-import io.github.xingray.volcenginesdk.model.content.*
+import com.github.xingray.volcenginesdk.model.content.*
 import kotlinx.coroutines.test.runTest
 import kotlin.test.*
 

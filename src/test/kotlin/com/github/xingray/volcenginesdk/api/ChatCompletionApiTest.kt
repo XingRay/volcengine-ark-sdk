@@ -1,6 +1,6 @@
 package com.github.xingray.volcenginesdk.api
 
-import io.github.xingray.volcenginesdk.model.chat.*
+import com.github.xingray.volcenginesdk.model.chat.*
 import kotlinx.coroutines.flow.toList
 import kotlinx.coroutines.test.runTest
 import kotlinx.serialization.json.JsonPrimitive

@@ -1,9 +1,9 @@
 package com.github.xingray.volcenginesdk.api
 
-import io.github.xingray.volcenginesdk.ArkClient
-import io.github.xingray.volcenginesdk.ArkConstants
-import io.github.xingray.volcenginesdk.model.embedding.*
-import io.github.xingray.volcenginesdk.util.checkSuccess
+import com.github.xingray.volcenginesdk.ArkClient
+import com.github.xingray.volcenginesdk.ArkConstants
+import com.github.xingray.volcenginesdk.model.embedding.*
+import com.github.xingray.volcenginesdk.util.checkSuccess
 import io.ktor.client.call.*
 
 /**

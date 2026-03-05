@@ -1,8 +1,8 @@
 package com.github.xingray.volcenginesdk.api
 
-import io.github.xingray.volcenginesdk.model.chat.ChatMessage
-import io.github.xingray.volcenginesdk.model.chat.ChatMessageRole
-import io.github.xingray.volcenginesdk.model.tokenization.*
+import com.github.xingray.volcenginesdk.model.chat.ChatMessage
+import com.github.xingray.volcenginesdk.model.chat.ChatMessageRole
+import com.github.xingray.volcenginesdk.model.tokenization.*
 import kotlinx.coroutines.test.runTest
 import kotlinx.serialization.json.JsonPrimitive
 import kotlin.test.*

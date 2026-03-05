@@ -1,6 +1,6 @@
 package com.github.xingray.volcenginesdk.model.tokenization
 
-import io.github.xingray.volcenginesdk.model.chat.ChatMessage
+import com.github.xingray.volcenginesdk.model.chat.ChatMessage
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 

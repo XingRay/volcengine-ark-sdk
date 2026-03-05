@@ -1,7 +1,7 @@
 package com.github.xingray.volcenginesdk.util
 
-import io.github.xingray.volcenginesdk.ArkErrorResponse
-import io.github.xingray.volcenginesdk.ArkException
+import com.github.xingray.volcenginesdk.ArkErrorResponse
+import com.github.xingray.volcenginesdk.ArkException
 import io.ktor.client.call.*
 import io.ktor.client.statement.*
 import io.ktor.http.*

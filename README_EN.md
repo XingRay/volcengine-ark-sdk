@@ -130,7 +130,7 @@ Then add the dependency:
 ### 1. Create Client
 
 ```kotlin
-import io.github.xingray.volcenginesdk.ArkClient
+import com.github.xingray.volcenginesdk.ArkClient
 
 val client = ArkClient()
 val apiKey = "your-api-key"
@@ -139,8 +139,8 @@ val apiKey = "your-api-key"
 ### 2. Text Generation
 
 ```kotlin
-import io.github.xingray.volcenginesdk.api.ChatCompletionApi
-import io.github.xingray.volcenginesdk.model.chat.*
+import com.github.xingray.volcenginesdk.api.ChatCompletionApi
+import com.github.xingray.volcenginesdk.model.chat.*
 import kotlinx.serialization.json.JsonPrimitive
 
 val api = ChatCompletionApi(client)
@@ -303,8 +303,8 @@ println(result.choices[0].message?.content)
 ### 7. Text Embeddings
 
 ```kotlin
-import io.github.xingray.volcenginesdk.api.EmbeddingApi
-import io.github.xingray.volcenginesdk.model.embedding.EmbeddingRequest
+import com.github.xingray.volcenginesdk.api.EmbeddingApi
+import com.github.xingray.volcenginesdk.model.embedding.EmbeddingRequest
 
 val embeddingApi = EmbeddingApi(client)
 
@@ -325,8 +325,8 @@ result.data.forEach { embedding ->
 ### 8. Image Generation
 
 ```kotlin
-import io.github.xingray.volcenginesdk.api.ImageGenerationApi
-import io.github.xingray.volcenginesdk.model.image.GenerateImagesRequest
+import com.github.xingray.volcenginesdk.api.ImageGenerationApi
+import com.github.xingray.volcenginesdk.model.image.GenerateImagesRequest
 
 val imageApi = ImageGenerationApi(client)
 
@@ -380,8 +380,8 @@ imageApi.streamGenerateImages(
 ### 9. Bot Chat
 
 ```kotlin
-import io.github.xingray.volcenginesdk.api.BotChatApi
-import io.github.xingray.volcenginesdk.model.bot.BotChatCompletionRequest
+import com.github.xingray.volcenginesdk.api.BotChatApi
+import com.github.xingray.volcenginesdk.model.bot.BotChatCompletionRequest
 
 val botApi = BotChatApi(client)
 
@@ -451,7 +451,7 @@ val client = ArkClient(json = json)
 The SDK provides `ArkConstants` object for managing all constants:
 
 ```kotlin
-import io.github.xingray.volcenginesdk.ArkConstants
+import com.github.xingray.volcenginesdk.ArkConstants
 
 // API Endpoints
 ArkConstants.Endpoint.CHAT_COMPLETIONS
@@ -473,7 +473,7 @@ ArkConstants.ResponseFormatType.JSON_SCHEMA
 ## Error Handling
 
 ```kotlin
-import io.github.xingray.volcenginesdk.ArkException
+import com.github.xingray.volcenginesdk.ArkException
 
 try {
     val result = api.createChatCompletion(apiKey, request)

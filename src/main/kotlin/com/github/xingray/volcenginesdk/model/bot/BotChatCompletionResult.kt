@@ -1,7 +1,7 @@
 package com.github.xingray.volcenginesdk.model.bot
 
-import io.github.xingray.volcenginesdk.model.Usage
-import io.github.xingray.volcenginesdk.model.chat.ChatCompletionChoice
+import com.github.xingray.volcenginesdk.model.Usage
+import com.github.xingray.volcenginesdk.model.chat.ChatCompletionChoice
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 

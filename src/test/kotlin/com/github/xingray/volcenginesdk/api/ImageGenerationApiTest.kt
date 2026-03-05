@@ -1,7 +1,7 @@
 package com.github.xingray.volcenginesdk.api
 
-import io.github.xingray.volcenginesdk.model.image.GenerateImagesRequest
-import io.github.xingray.volcenginesdk.model.image.ResponseFormat
+import com.github.xingray.volcenginesdk.model.image.GenerateImagesRequest
+import com.github.xingray.volcenginesdk.model.image.ResponseFormat
 import kotlinx.coroutines.flow.toList
 import kotlinx.coroutines.test.runTest
 import kotlin.test.AfterTest
