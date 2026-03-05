@@ -30,30 +30,37 @@ data class GenerateImagesRequest(
     @SerialName("image")
     val image: List<String>? = null,
 
-    @SerialName("response_format")
-    val responseFormat: String? = null,
+    @SerialName("size")
+    val size: String? = null,
 
     @SerialName("seed")
     val seed: Int? = null,
 
-    @SerialName("guidance_scale")
-    val guidanceScale: Double? = null,
-
-    @SerialName("size")
-    val size: String? = null,
-
-    @SerialName("watermark")
-    val watermark: Boolean? = null,
-
-    @SerialName("optimize_prompt")
-    val optimizePrompt: Boolean? = null,
-
     @SerialName("sequential_image_generation")
     val sequentialImageGeneration: String? = null,
+
+    @SerialName("sequential_image_generation_options")
+    val sequentialImageGenerationOptions: SequentialImageGenerationOptions? = null,
+
+    @SerialName("tools")
+    val tools: List<Tool>? = null,
 
     @SerialName("stream")
     val stream: Boolean? = null,
 
-    @SerialName("n")
-    val n: Int? = null,
-)
+    @SerialName("guidance_scale")
+    val guidanceScale: Double? = null,
+
+    @SerialName("output_format")
+    val outputFormat: String? = null,
+
+    @SerialName("response_format")
+    val responseFormat: ResponseFormat? = null,
+
+    @SerialName("watermark")
+    val watermark: Boolean? = null,
+
+    @SerialName("optimize_prompt_options")
+    val optimizePromptOptions: OptimizePromptOptions? = null,
+
+    )

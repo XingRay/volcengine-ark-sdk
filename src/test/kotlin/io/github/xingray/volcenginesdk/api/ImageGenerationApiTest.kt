@@ -1,9 +1,13 @@
 package io.github.xingray.volcenginesdk.api
 
-import io.github.xingray.volcenginesdk.model.image.*
+import io.github.xingray.volcenginesdk.model.image.GenerateImagesRequest
+import io.github.xingray.volcenginesdk.model.image.ResponseFormat
 import kotlinx.coroutines.flow.toList
 import kotlinx.coroutines.test.runTest
-import kotlin.test.*
+import kotlin.test.AfterTest
+import kotlin.test.Test
+import kotlin.test.assertNotNull
+import kotlin.test.assertTrue
 
 /**
  * ImageGenerationApi 集成测试。
@@ -28,7 +32,7 @@ class ImageGenerationApiTest {
     fun `generateImagesAsUrl should return image URL`() = runTest {
         val result = api.generateImagesAsUrl(
             apiKey,
-            GenerateImagesRequest(model = model, prompt = "一只白色的猫", n = 1),
+            GenerateImagesRequest(model = model, prompt = "一只胖胖的橘猫跳起来抓飞在空中的毛线球"),
         )
 
         assertTrue(result.data.isNotEmpty(), "data 不应为空")
@@ -51,7 +55,7 @@ class ImageGenerationApiTest {
     fun `generateImagesAsBase64 should return base64 data`() = runTest {
         val result = api.generateImagesAsBase64(
             apiKey,
-            GenerateImagesRequest(model = model, prompt = "一只白色的猫", n = 1),
+            GenerateImagesRequest(model = model, prompt = "一只白色的猫"),
         )
 
         assertTrue(result.data.isNotEmpty(), "data 不应为空")
@@ -78,8 +82,7 @@ class ImageGenerationApiTest {
             GenerateImagesRequest(
                 model = model,
                 prompt = "一只白色的猫",
-                responseFormat = "url",
-                n = 1,
+                responseFormat = ResponseFormat.URL,
             ),
         )
 
@@ -103,7 +106,7 @@ class ImageGenerationApiTest {
     fun `streamGenerateImages should return Flow of events`() = runTest {
         val events = api.streamGenerateImages(
             apiKey,
-            GenerateImagesRequest(model = model, prompt = "一只白色的猫", n = 1),
+            GenerateImagesRequest(model = model, prompt = "一只胖胖的橘猫跳起来抓飞在空中的毛线球"),
         ).toList()
 
         assertTrue(events.isNotEmpty(), "events 不应为空")

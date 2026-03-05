@@ -116,4 +116,17 @@ object ArkConstants {
         /** 流结束标记 */
         const val DONE_MARKER = "[DONE]"
     }
+
+    object ModelId {
+        const val SEEDREAM_5_0_LITE = "doubao-seedream-5-0-260128"
+        const val SEEDREAM_4_5 = "doubao-seedream-4-5-251128"
+        const val SEEDREAM_4_0 = "doubao-seedream-4-0-250828"
+        const val SEEDREAM_3_0_T2I = "doubao-seedream-3-0-t2i-250415"
+        const val SEEDEDIT_3_0_I2I = "doubao-seededit-3-0-i2i-250628"
+
+    }
+
+    object Tools{
+        const val WEB_SEARCH = "web_search"
+    }
 }

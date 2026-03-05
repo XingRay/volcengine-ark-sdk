@@ -1,9 +1,11 @@
 package io.github.xingray.volcenginesdk.api
 
-import io.github.xingray.volcenginesdk.ArkConstants
-
 import io.github.xingray.volcenginesdk.ArkClient
-import io.github.xingray.volcenginesdk.model.image.*
+import io.github.xingray.volcenginesdk.ArkConstants
+import io.github.xingray.volcenginesdk.model.image.GenerateImagesRequest
+import io.github.xingray.volcenginesdk.model.image.ImageGenStreamEvent
+import io.github.xingray.volcenginesdk.model.image.ImagesResponse
+import io.github.xingray.volcenginesdk.model.image.ResponseFormat
 import io.github.xingray.volcenginesdk.util.checkSuccess
 import io.github.xingray.volcenginesdk.util.toSseFlow
 import io.ktor.client.call.*
@@ -33,7 +35,7 @@ class ImageGenerationApi(private val client: ArkClient) {
      * @throws io.github.xingray.volcenginesdk.ArkException 当 API 返回错误时
      */
     suspend fun generateImagesAsUrl(apiKey: String, request: GenerateImagesRequest): ImagesResponse {
-        val req = request.copy(responseFormat = "url", stream = false)
+        val req = request.copy(responseFormat = ResponseFormat.URL, stream = false)
         return generateImages(apiKey, req)
     }
 
@@ -48,7 +50,7 @@ class ImageGenerationApi(private val client: ArkClient) {
      * @throws io.github.xingray.volcenginesdk.ArkException 当 API 返回错误时
      */
     suspend fun generateImagesAsBase64(apiKey: String, request: GenerateImagesRequest): ImagesResponse {
-        val req = request.copy(responseFormat = "b64_json", stream = false)
+        val req = request.copy(responseFormat = ResponseFormat.BASE64_JSON, stream = false)
         return generateImages(apiKey, req)
     }
 
