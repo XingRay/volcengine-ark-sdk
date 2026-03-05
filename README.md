@@ -96,9 +96,9 @@ dependencyResolutionManagement {
 
 然后在模块的 `build.gradle` 中添加依赖：
 
-```groovy
+```kts
 dependencies {
-    implementation 'com.github.xingray:volcengine-ark-sdk:0.0.1'
+    implementation("com.github.XingRay:volcengine-ark-sdk:0.0.2") 
 }
 ```
 

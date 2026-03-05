@@ -77,7 +77,7 @@ Then add the dependency in your module's `build.gradle.kts`:
 
 ```kotlin
 dependencies {
-    implementation("com.github.xingray:volcengine-ark-sdk:0.0.1")
+    implementation("com.github.XingRay:volcengine-ark-sdk:0.0.2")
 }
 ```
 
